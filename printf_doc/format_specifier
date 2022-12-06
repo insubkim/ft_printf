@@ -1,0 +1,42 @@
+x,X
+    [# 0 -] [width] [precision]
+- if precision is given, 0 flag ignore
+- '-' overrides a 0 if both are given.
+
+c
+unsigned char
+     [-] width 
+
+
+d,i 
+    [0 - ' ' +] [width] [precision]
+- if precision is given, 0 flag ignore
+- '-' overrides a 0 if both are given.
+- '+' overrides a space if both are used.
+
+u
+    [0 -] [width] [precision]
+- if precision is given, 0 flag ignore
+- '-' overrides a 0 if both are given.
+
+p
+    [-] [width] 
+
+s
+    [-] [width] [precision]
+- precision maximum number of characters to be printed
+If a precision is given, no null character need be present
+if the precision is not specified, or is greater than the size of the array, 
+the array must contain a terminating NUL character.
+
+%
+    [- 0] [width] 
+
+width
+    pad space left or right
+
+precision
+    If the digit string is omitted, the precision is taken as zero. 
+
+
+flags can overlap
